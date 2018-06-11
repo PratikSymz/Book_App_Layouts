@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_review_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/review_source_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/review_source_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:src="@drawable/source_icon_placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/review_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:text="Source" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/review_rating_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semi_bold"
+                        android:padding="2dp"
+                        android:text="4.1"
+                        android:textAppearance="?android:textAppearanceSmall" />
+
+                    <RatingBar
+                        android:id="@+id/review_rating"
+                        style="?attr/ratingBarStyleSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:padding="2dp"
+                        android:stepSize="0.1"
+                        android:rating="5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/review_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:gravity="end|top"
+                android:text="28 Sep."
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/review_snippet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_source_layout"
+            android:ellipsize="end"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:paddingBottom="5dp"
+            android:paddingStart="10dp"
+            android:textColor="#00b8ff"
+            android:lines="1"
+            android:paddingTop="15dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:text="Moonwalking with Einstein is huge fun to read!" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_snippet"
+            android:ellipsize="end"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingTop="5dp"
+            android:textAlignment="viewStart"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:text="Lorem pmdvln snvxanefavijvdjksbvkbkwbdsvbbjkdsvkjwbdksvbkbkjsbvkbkjbdbvkjbsdkjvbkjasbvjdbh ghskdsdgiuweufhdjhaejh ihehfhlKHFEHWGSODH" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
